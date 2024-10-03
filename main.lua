@@ -2,20 +2,8 @@
 local MAX_AMOUNT_OF_HOLOGRAMS = 3
 
 local holograms = {
-    { coords = vec3(-420.000, 1134.976, 327.1290), text = "~w~[~b~ALT~w~] ~m~Opravovací Stůl", range = 10.0 },
-    --{ coords = vec3(-424.5180, 1136.3160, 327.1290), text = "~w~[~o~ALT~w~] Opravovací Stůl", range = 10.0 },
-    --{ coords = vec3(-412.8747, 1169.4463, 325.8539), text = "~w~[~o~E~w~] Odtahovka", range = 10.0 },
-    { coords = vec3(290.4904, -1596.8307, 31.1614), text = "~w~[~b~F2~w~] ~m~Sklad", range = 30.0 },
-    { coords = vec3(283.6244, -1601.7853, 31.1614), text = "~w~[~b~ALT~w~] ~m~Oblečení", range = 10.0 },
-   -- { coords = vec3(-424.4679, 1127.5157, 326.8549), text = "~w~[~o~ALT~w~] Obchod se zbraněmi", range = 10.0 },
-    { coords = vec3(288.0217, -1596.4174, 31.1614), text = "~w~[~b~F2~w~] ~m~Obchod", range = 30.0 },
-    { coords = vec3(285.6013, -1597.3458, 31.1614), text = "~w~[~b~ALT~w~] ~m~Teleport Menu", range = 30.0 }, -- Spawn
-    { coords = vec3(3065.8464, -4809.4634, 15.2616), text = "~w~[~b~ALT~w~] ~m~Teleport Menu", range = 20.0 }, -- LOĎ
-    { coords = vec3(3620.3857, 3743.8123, 30.0462), text = "~w~[~b~ALT~w~] ~m~Teleport Menu", range = 20.0 }, -- HUMAN LABS
-    { coords = vec3(284.1152, -1599.2659, 31.1614), text = "~w~[~b~ALT~w~] ~m~VEHICLE SHOP", range = 30.0 },
-
-    --{ coords = vec3(-432.0555, 1110.7445, 328.0), text = "~w~[~o~E~w~] Bankomat", range = 20.0 },
-    --{ coords = vec3(-426.58, 1109.2234, 328.0), text = "~w~[~o~E~w~] Bankomat", range = 20.0 },
+    --{ coords = vec3(999.9, -999.9, 999.9), text = "~w~This is a test", range = 20.0 },
+    --{ coords = vec3(-111.1, 111.1, 111.1), text = "~w~[~o~INPUT~w~] This is a test to show how to open something", range = 10.0 },
 }
 
 function RotationToDirection(rotation)
