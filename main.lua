@@ -1,3 +1,6 @@
+--- the usage will depend on this (0.01-0.03ms per hologram)
+local MAX_AMOUNT_OF_HOLOGRAMS = 3
+
 local holograms = {
     { coords = vec3(-420.000, 1134.976, 327.1290), text = "~w~[~b~ALT~w~] ~m~Opravovací Stůl", range = 10.0 },
     --{ coords = vec3(-424.5180, 1136.3160, 327.1290), text = "~w~[~o~ALT~w~] Opravovací Stůl", range = 10.0 },
@@ -74,11 +77,11 @@ function GetNearestHolograms(playerCoords)
     for _, hologram in ipairs(holograms) do
         local dist = #(playerCoords - hologram.coords)
         
-        if #nearestHolograms < 3 then
+        if #nearestHolograms < MAX_AMOUNT_OF_HOLOGRAMS then
             table.insert(nearestHolograms, { hologram = hologram, distance = dist })
         else
             local maxIndex = 1
-            for i = 3, #nearestHolograms do
+            for i = MAX_AMOUNT_OF_HOLOGRAMS, #nearestHolograms do
                 if nearestHolograms[i].distance > nearestHolograms[maxIndex].distance then
                     maxIndex = i
                 end
