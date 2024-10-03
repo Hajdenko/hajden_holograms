@@ -6,6 +6,7 @@ Somewhat optimized holograms.
 
 ## <b>Features</b>
 - Usage depends on the hologram count (0.01-0.03ms per hologram)
+- Usage 0.0ms when no holograms are shown
 - Configurable
 - Easy to Use
 - Free
