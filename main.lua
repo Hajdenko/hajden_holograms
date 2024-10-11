@@ -1,5 +1,6 @@
 --- the usage will depend on this (0.01-0.03ms per hologram)
 local MAX_AMOUNT_OF_HOLOGRAMS = 3
+local USE_CUSTOM_FONT = true
 
 local holograms = {
     --{ coords = vec3(999.9, -999.9, 999.9), text = "~w~This is a test", range = 20.0 },
@@ -30,10 +31,15 @@ function ZobrazitText(x, y, z, textInput, fontId, scaleX, scaleY)
     scale = scale * fov
 
     SetTextScale(scaleX * scale, scaleY * scale)
-    RegisterFontFile('BBN')
-    fontId = RegisterFontId('BBN')
-    SetTextFont(fontId)
+    if USE_CUSTOM_FONT then
+        RegisterFontFile('BBN')
+        fontId = RegisterFontId('BBN')
+        SetTextFont(fontId)
+    else
+        SetTextFont(0)
+    end
     SetTextProportional(1)
+    -- no need for these
     --SetTextColour(250, 250, 250, 255)
     --SetTextDropshadow(1, 1, 1, 1, 255)
     --SetTextEdge(2, 0, 0, 0, 150)
