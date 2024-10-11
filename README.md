@@ -1,9 +1,6 @@
 # hajden_holograms
 Somewhat optimized holograms.
 
-## <b>Requirements</b>
-- ox_lib
-
 ## <b>Features</b>
 - Framework independent
 - Usage depends on the hologram count (0.01-0.03ms per hologram)
