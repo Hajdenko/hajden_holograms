@@ -15,4 +15,4 @@ Somewhat optimized holograms.
 - Only possible to see 3(default) holograms at once
 - Hologram dissapear when the player goes away from one
 
-No preview
+[PREVIEW](https://forum.cfx.re/t/free-somewhat-optimized-holograms-optimized-configurable/5273993/4?u=hajdenkoo)
